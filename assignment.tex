@@ -1,0 +1,40 @@
+\documentclass[]{scrartcl}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% define your personal data here
+\newcommand{\mycourse}{The Champions Club}
+\newcommand{\mycoursenumber}{ABC123}
+\newcommand{\myprof}{DrDisrespect}
+\newcommand{\myname}{Alex}
+\newcommand{\mymatrnumber}{123456}
+\newcommand{\myassignementnumber}{1}
+\newcommand{\myduedate}{01.01.1970}
+% end of your personal data
+
+% header
+\rhead{\myname\ (\mymatrnumber) | \mycoursenumber\ / \mycourse\ | exercise \#\myassignementnumber}
+
+%opening
+\title{\mycoursenumber\ - \mycourse}
+\subtitle{\myprof}
+\author{\myname, \mymatrnumber}
+\date{due on \myduedate}
+\subject{exercise \myassignementnumber}
+
+\begin{document}
+
+\maketitle
+
+\input{files/task1-1}
+
+% clearpage can be deleted, it´s here just to demonstrate the header
+\clearpage
+
+\input{files/task1-2}
+
+\end{document}
